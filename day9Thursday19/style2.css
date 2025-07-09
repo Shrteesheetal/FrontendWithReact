@@ -1,0 +1,44 @@
+.btn:hover {
+  background-color: purple;
+  color: white;
+}
+li:first-child {
+  color: green;
+  font-weight: bold;
+}
+
+
+
+input:checked + label {
+  color: green;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.note::before {
+  content: "⚠ ";
+  color: orange;
+}
+
+.note::after {
+  content: " ✔";
+  color: green;
+}
+p::first-letter {
+  font-size: 200%;
+  color: red;
+  font-weight: bold;
+}
+::selection {
+  background-color: navy;
+  color: white;
+}

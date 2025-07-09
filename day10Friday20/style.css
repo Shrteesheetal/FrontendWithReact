@@ -1,0 +1,89 @@
+h1:hover{
+    background-color: darkgreen;
+}
+h1:focus{
+    color: #000;
+}
+#focus-example:focus{
+    color:aquamarine;
+    background-color: brown;
+}
+li:first-child {
+  color: green;
+  font-weight: bold;
+}
+h4:nth-child{
+    color: rgb(245, 142, 8);
+
+}
+#first-child p:not(:first-child){
+    background-color: yellow;
+    color: yellowgreen;
+}
+#first-child h4:has(em){
+    color:red;
+    background-color: crimson;
+}
+#first-child h3:has(strong){
+    background-color: coral;
+    color: darkolivegreen;
+}
+#heading1::before{
+    color: darkgoldenrod;
+    background-color: darkviolet;
+}
+#heading1::after{
+      content: "⚠ ";
+      color: orange;
+}
+
+.note::before {
+  content: "⚠ ";
+  color: orange;
+}
+
+.note::after {
+  content: " ✔";
+  color: green;
+}
+h2::first-letter {
+  font-size: 200%;
+  color: red;
+  font-weight: bold;
+}
+::selection {
+  background-color: navy;
+  color: white;
+}
+::marker{
+    content:"😂" ;
+    background-color: chartreuse;
+}
+a[target]{
+    color: darkcyan;
+}
+a[target="_blank"]{
+    color: aquamarine;
+}
+li[target="flower"]
+{
+    color: chartreuse;
+}
+[class="top"]{
+    color: aquamarine;
+}
+
+    input[type="email"] {
+      border: 2px solid red;
+    }
+
+    a[href^="https"] {
+      color: green;
+    }
+
+    img[src$=".png"] {
+      border: 3px dashed orange;
+    }
+
+
+

@@ -1,0 +1,46 @@
+.box{
+    display: inline-block ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.red {
+    background-color: red;
+}
+.green {
+    position: relative;
+    right: 20px;
+    top: 20px;
+    left: 20PX;
+    z-index: 2;
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+#LoremContent {
+    position: absolute;
+    background-color: rgba(8, 188, 188, 0.8);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+ div p {
+      color: blue;
+    }
+
+    /* 2. Child Combinator */
+    div > span {
+      color: red;
+    }
+
+    /* 3. Adjacent Sibling Combinator */
+    h2 + p {
+      background-color: yellow;
+    }
+
+    /* 4. General Sibling Combinator */
+    h3 ~ p {
+      font-style: italic;
+    }

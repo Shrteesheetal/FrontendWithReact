@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formhwstyle.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="registrationForm" method="post" enctype="multipart/form-data">
+      
+    <!-- Text -->
+    <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" name="fullName" id="fullName" required />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required />
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+    </div>
+
+    <!-- Telephone -->
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" />
+    </div>
+
+    <!-- URL -->
+    <div class="form-group">
+        <label for="website">Website</label>
+        <input type="url" name="website" id="website" />
+    </div>
+
+    <!-- Number -->
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" />
+    </div>
+
+   
+    <!-- Date -->
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" />
+    </div>
+
+   
+
+   
+
+    <!-- Radio only one selection -->
+    <div class="form-group">
+        <label>Gender</label>
+        <div class="form-check">
+            <input type="radio" name="gender" id="male" value="Male" checked />
+            <label for="male">Male</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="gender" id="female" value="Female" />
+            <label for="female">Female</label>
+        </div>
+    </div>
+
+    <!-- Checkboxes allow multiple selections -->
+    <div class="form-group">
+        <label>Skills</label>
+        <div class="form-check">
+            <input type="checkbox" name="skills" id="html" value="HTML" />
+            <label for="html">HTML</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="skills" id="css" value="CSS" />
+            <label for="css">CSS</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="skills" id="js" value="JavaScript" />
+            <label for="js">JavaScript</label>
+        </div>
+    </div>
+
+    <!-- Color -->
+    <div class="form-group">
+        <label for="favColor">Favorite Color</label>
+        <input type="color" name="favColor" id="favColor" value="#ff0000" />
+    </div>
+
+    <!-- Range -->
+    <div class="form-group">
+        <label for="satisfaction">Satisfaction Level (0-10)</label>
+        <input type="range" name="satisfaction" id="satisfaction" min="0" max="10" />
+    </div>
+
+    <!-- File -->
+    <div class="form-group">
+        <label for="resume">Upload Resume</label>
+        <input type="file" name="resume" id="resume" />
+    </div>
+
+    <!-- Hidden -->
+    <input type="hidden" name="userId" value="12345" />
+
+    <!-- Submit & Reset -->
+    <div class="form-group buttons">
+        <button type="submit" class="btn-submit">Register</button>
+        <button type="reset" class="btn-reset">Reset</button>
+    </div>
+</form>
+
+    
+</body>
+</html>

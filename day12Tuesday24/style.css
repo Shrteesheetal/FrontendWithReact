@@ -1,0 +1,67 @@
+.flexboxwrapper {
+  display: flex;
+  flex-direction: row;       /* Arrange items in a row (horizontal) */
+  justify-content: center;   /* Center items horizontally in the container */
+  align-items: center;       /* Center items vertically */
+  height: 150px;             /* Height of container */
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  padding: 20px;
+  gap: 20px;                 /* Space between boxes */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.green {
+  background-color: seagreen;
+}
+
+.blue {
+  background-color: royalblue;
+}
+/* cssgrid */
+.gridwrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+}
+
+.box1 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.green {
+  background-color: seagreen;
+}
+
+.blue {
+  background-color: royalblue;
+}
